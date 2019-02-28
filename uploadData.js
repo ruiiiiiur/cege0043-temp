@@ -5,6 +5,7 @@ var surname = document.getElementById("surname").value;
 var module = document.getElementById("module").value;
 var postString = "name="+name +"&surname="+surname+"&module="+module;
 alert (postString);
+processData(postString);
 }
 
 var client; // the global variable that holds the request
