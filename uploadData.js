@@ -3,7 +3,15 @@ function startDataUpload() {
 var name = document.getElementById("name").value;
 var surname = document.getElementById("surname").value;
 var module = document.getElementById("module").value;
+
+// now get the geometry values
+var latitude = document.getElementById("latitude").value;
+var longitude = document.getElementById("longitude").value;
+
 var postString = "name="+name +"&surname="+surname+"&module="+module;
+
+postString = postString + "&latitude=" + latitude + "&longitude=" + longitude;
+
 alert (postString);
 processData(postString);
 
