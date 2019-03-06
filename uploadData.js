@@ -10,8 +10,7 @@ var latitude = document.getElementById("latitude").value;
 var longitude = document.getElementById("longitude").value;
 postString = postString + "&latitude=" + latitude + "&longitude=" + longitude;
 
-alert (postString);
-processData(postString);
+
 
 
 // now get the checkbox values - separate them with a | so that they can be
@@ -32,6 +31,9 @@ postString=postString+"&lecturetime=afternoon";}
 // now get the select box values
 var language = document.getElementById("languageselectbox").value;
 postString = postString + "&language="+language;
+
+alert (postString);
+processData(postString);
 }
 
 var client; // the global variable that holds the request
